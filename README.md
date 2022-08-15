@@ -44,8 +44,25 @@ La **PRIMARY KEY** es el identificador interno de la tabla, normalmente es asoci
 ```
 
 
- - ****
+ - **Alterar o modificar una columna:**
+ Modifica solo la columna y haciendo referencia al tipo de dato tambien.
  ```sql
+ ALTER TABLE nombre_tabla MODIFY columna INT AUTO_INCREMENT;
+```
+
+
+ - **Actualizar un dato y Borrar**
+Podemos actualizar y borrar datos de nuestra tabla usando la sentencia WHERE
+
+ ```sql
+ UPDATE nombre_tabla SET columna WHERE id = 3
+ DELETE FROM nombre tabla WHERE columna = 'Feliz' AND id = 3;
+```
+ - **Insertar un valor a la tabla**
+ Se especifica la tabla y las columnas a las que van agregar un registro, seguido de los valores en su columna correspondiente
+ ```sql
+ INSERT INTO nombre_tabla(columna1, columna2)
+ VALUES('Felipe', 'Triste');
 ```
  - ****
  ```sql
@@ -53,6 +70,19 @@ La **PRIMARY KEY** es el identificador interno de la tabla, normalmente es asoci
  - ****
  ```sql
 ```
+
+ - ****
+ ```sql
+```
+
+ - ****
+ ```sql
+```
+
+ - ****
+ ```sql
+```
+
  - ****
  ```sql
 ```
