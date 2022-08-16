@@ -142,8 +142,12 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
  ON user_table.id = product_table.created_by;
 ```
 
- - ****
+ - **Count**
+ Nos regresa el total de elementos agrupados por una caracteristica en concreto:
+ 
  ```sql
+ SELECT count(id) FROM users;
+ SELECT count(id), marca FROM users GROUP BY marca;
 ```
 
 - ****
