@@ -115,16 +115,31 @@ Permite tener los valores que esten entre dos valores.
  SELECT MIN(edad) AS menor_edad FROM tabla;
 ```
 
-- ****
+- **Renombrar una tabla**
  ```sql
+ RENAME TABLE tabla TO nueva_tabla;
 ```
 
- - ****
+ - **Ejemplo de una tabla con llave foranea**
  ```sql
+ create table products(
+ id int not null auto_increment,
+ name varchar(50) not null,
+ created_by int not null,
+ marca varchar(50) not null,
+ primary key(id),
+ foreign key(created_by) references user(id)
+ );
 ```
 
-- ****
+- **Left join**
+Basicamente es asociar una tabla que trae todos los datos que corresponden a la tabla y solo trae los datos de otra tabla si solo si, estos coinciden con la tabla principal asociada:
+
  ```sql
+ SELECT user_table.id, user_table.email, product_table.name 
+ FROM user user_table 
+ LEFT JOIN product product_table 
+ ON user_table.id = product_table.created_by;
 ```
 
  - ****
