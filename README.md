@@ -64,10 +64,58 @@ Podemos actualizar y borrar datos de nuestra tabla usando la sentencia WHERE
  INSERT INTO nombre_tabla(columna1, columna2)
  VALUES('Felipe', 'Triste');
 ```
- - ****
+ - **Limit**
+ Nos permite definir un limite de datos a traer y nos seleccionara los primeros datos que coincidan.
+ 
  ```sql
+ SELECT * FROM tabla limit 2;
+ SELECT * FROM tabla WHERE edad > 10 limit 1;
 ```
- - ****
+ - **AND & OR**
+ Podemos usar el operador AND y OR para crear queries un poco más complejas:
+ 
+ ```sql
+ SELECT * FROM tabla WHERE edad > 30 AND edad < 50;
+ SELEC * FROM tabla WHERE edad > 30 OR edad < 30;
+```
+
+ - **Like**
+ Like nos permte usar '%' para hacer busquedas en textos o datos de tipo varchar.
+ En pocas palabras '%' se traduce como (No importa el contenido como empiece o como termine o ambos)
+ **%Palabras%*** //No importa como empiece o termine debe contener el termino Palabras
+ **%Palabras*** //No importa como empiece debe terminar en el 'Palabras'
+ **Palabras%*** //No importa como termine debe empezar en el 'Palabras'
+ 
+ 
+ ```sql
+ SELECT * FROM tabla WHERE nombre LIKE 'Carla%';
+```
+
+ - **Between**
+Permite tener los valores que esten entre dos valores.
+ 
+ ```sql
+ SELECT * FROM tabla WHERE edad BETWEEN 20 and 30;
+```
+
+ - **Ordenas de manera ascendete y descendente**
+ Traer datos de una manera ordenada especifica (mayor a menor o menor a mayor):
+ 
+ ```sql
+ SELECT * FROM tabla ORDER BY edad ASC;
+ SELECT * FROM tabla ORDER BY edad DESC;
+```
+
+ - **Buscar el valor Maximo o Minimo**
+ Podemos hacer uso de las funciones MAX y MIN para traer el valor maximo o mininmo de una tabla
+ **NOTA: AS es para asignar un alias, este alias solo vive en el momento de hacer el query pero no se crea una tabla ni se mantiene el valor fuera de el query**
+ 
+ ```sql
+ SELECT MAX(edad) AS mayor_edad FROM tabla;
+ SELECT MIN(edad) AS menor_edad FROM tabla;
+```
+
+- ****
  ```sql
 ```
 
@@ -75,11 +123,31 @@ Podemos actualizar y borrar datos de nuestra tabla usando la sentencia WHERE
  ```sql
 ```
 
- - ****
+- ****
  ```sql
 ```
 
  - ****
+ ```sql
+```
+
+- ****
+ ```sql
+```
+
+ - ****
+ ```sql
+```
+
+- ****
+ ```sql
+```
+
+ - ****
+ ```sql
+```
+
+- ****
  ```sql
 ```
 
