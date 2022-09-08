@@ -205,6 +205,7 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
 9.- VER LA VERSION DE POSTGRES INSTALADA, IMPORTANTE PONER EL ';'
 `SELECT version();`
 
+
 10.- VOLVER A EJECUTAR LA FUNCION REALIADA ANTERIORMENTE
 `\g`
 
@@ -213,3 +214,50 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
 
 12.- LIMPIAR PANTALLA DE LA CONSOLA PSQL
 `Ctrl + L`
+
+
+### CREAR ROLES
+Basicamente es crear un "usuario" que puede tener ciertos permisos sobre nuestra Base de Datos. HAY QUE USARLOS CON PRECAUCION YA QUE ESTO PUEDE ALTERAR NUESTRAS TABALAS.
+
+Que puede hacer un ROLE:
+
+- Crear y Eliminar
+- Asignar atributos
+- Agrupar con otros roles
+- Roles predeterminados
+
+-- Ver las funciones del comando CREATE ROLE (help)
+`\h CREATE ROLE;`
+
+-- Creamos un ROLE (consultas -> lectura, insertar, actualizar)
+`CREATE ROLE usuario_consulta;`
+
+-- Mostrar todos los usuarios junto a sus atributos
+`\dg`
+-- Agregamos atributos al usuario o role
+`ALTER ROLE  usuario_consulta WITH LOGIN;
+ALTER ROLE  usuario_consulta WITH SUPERUSER;
+ALTER ROLE  usuario_consulta WITH PASSWORD'1234';`
+
+-- Elimanos el usuario o role
+`DROP ROLE usuario_consulta;`
+
+-- La mejor forma de crear un usuario o role por pgadmin
+CREATE ROLE usuario_consulta WITH
+  LOGIN
+  NOSUPERUSER
+  NOCREATEDB
+  NOCREATEROLE
+  INHERIT
+  NOREPLICATION
+  CONNECTION LIMIT -1
+  PASSWORD'1234';`
+`
+
+--Para obtorgar privilegios a nuestro usuario_consulta
+`
+GRANT INSERT, SELECT, UPDATE ON TABLE public.estacion TO usuario_consulta;
+GRANT INSERT, SELECT, UPDATE ON TABLE public.pasajero TO usuario_consulta;
+GRANT INSERT, SELECT, UPDATE ON TABLE public.trayecto TO usuario_consulta;
+GRANT INSERT, SELECT, UPDATE ON TABLE public.tren TO usuario_consulta;
+GRANT INSERT, SELECT, UPDATE ON TABLE public.viaje TO usuario_consulta;`
