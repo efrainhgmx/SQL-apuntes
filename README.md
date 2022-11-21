@@ -280,6 +280,7 @@ GRANT INSERT, SELECT, UPDATE ON TABLE public.viaje TO usuario_consulta;
 
 #### SP STORE PROCEDURES
 
+Mirar el contenido de un Store Procedure en SQL
 ```sql
 sp_showtext NOMBREDELSP
 ```
