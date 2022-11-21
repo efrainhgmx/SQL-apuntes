@@ -278,3 +278,4 @@ GRANT INSERT, SELECT, UPDATE ON TABLE public.tren TO usuario_consulta;
 GRANT INSERT, SELECT, UPDATE ON TABLE public.viaje TO usuario_consulta;
 ```
 
+#### SP STORE PROCEDURES
