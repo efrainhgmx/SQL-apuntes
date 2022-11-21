@@ -279,3 +279,7 @@ GRANT INSERT, SELECT, UPDATE ON TABLE public.viaje TO usuario_consulta;
 ```
 
 #### SP STORE PROCEDURES
+
+```sql
+sp_showtext NOMBREDELSP
+```
