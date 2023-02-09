@@ -154,6 +154,7 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
 Permite pasar una colección de elementos para la query.
 
  ```sql
+ SELECT * FROM users WHERE country in ('Mexico', 'Germany', 'USA');
 ```
 
  - ****
