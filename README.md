@@ -151,6 +151,7 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
 ```
 
 - **In**
+Permite pasar una colección de elementos para la query.
 
  ```sql
 ```
