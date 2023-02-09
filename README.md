@@ -150,7 +150,8 @@ Basicamente es asociar una tabla que trae todos los datos que corresponden a la 
  SELECT count(id), marca FROM users GROUP BY marca;
 ```
 
-- ****
+- **In**
+
  ```sql
 ```
 
