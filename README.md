@@ -164,12 +164,17 @@ Permite pasar una colección de elementos para la query.
  SELECT * FROM table_one;
 ```
 
-- ****
+- **Te permite cambiar el nombre o poner un alias a una columna, si esta no es muy descriptiva**
  ```sql
+ SELECT fiedl AS alias;
 ```
 
- - ****
+ - **FUNCIONES**
+ - Funciones matemáticas. Estas te permiten realizar conteos, sumas, realizar promedios y/o buscar minimos
+y maximos
  ```sql
+SELECT COUNT(id), SUM(quantity), AVG(age);
+SELECT MIN(date), MAX(quantity);
 ```
 
 - ****
