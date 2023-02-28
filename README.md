@@ -157,6 +157,25 @@ Permite pasar una colección de elementos para la query.
  SELECT * FROM users WHERE country in ('Mexico', 'Germany', 'USA');
 ```
 
+ - **Proyección SELECT**
+
+ El select más basico, hace una proyección de una entidad sin filtrar campos o columnas
+ ```sql
+ SELECT * FROM table_one;
+```
+
+- ****
+ ```sql
+```
+
+ - ****
+ ```sql
+```
+
+- ****
+ ```sql
+```
+
  - ****
  ```sql
 ```
