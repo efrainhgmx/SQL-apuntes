@@ -199,8 +199,21 @@ FROM tabla_diaria AS td
 	ON td.pk = tm.fk;
 ```
 
-- ****
+- **WHERE**
+WHERE nos permite hacer querys complejas combinandolas con operadores como estos
  ```sql
+ SELECT * FROM users WHERE name = 'Israel'
+AND (
+ lastname = 'Vazquez'
+ OR
+ lastname = 'Lopez'
+);
+
+
+SELECT * FROM users
+WHERE name = 'Israel'
+  AND lastname = 'Vazquez'
+  OR lastname = 'Lopez'
 ```
 
  - ****
