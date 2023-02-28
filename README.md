@@ -216,12 +216,28 @@ WHERE name = 'Israel'
   OR lastname = 'Lopez'
 ```
 
- - ****
+ - **LIKE**
+ LIKE nos permite buscar por un tipo de caracteres si es que no se tiene todo el dato
  ```sql
+ SELECT * FROM users
+WHERE name LIKE 'Is%';
+
+SELECT * 
+FROM users
+WHERE name LIKE 'Is_ael';
+
+SELECT * FROM users
+WHERE name NOT LIKE 'Is_ael';
 ```
 
-- ****
+- **NOT NULL**
+Buscar valores nulos o no nulos
  ```sql
+ SELECT * FROM users 
+WHERE name IS NULL;
+
+SELECT * FROM users 
+WHERE name IS NOT NULL;
 ```
 
  - ****
