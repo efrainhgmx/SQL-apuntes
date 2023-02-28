@@ -177,12 +177,26 @@ SELECT COUNT(id), SUM(quantity), AVG(age);
 SELECT MIN(date), MAX(quantity);
 ```
 
-- ****
+- **ESTRUCTURAS DE CONTROL**
+Podemos comparar una columna con otra y devolver un valor
  ```sql
+ SELECT IF(500<1000, "YES", "NO");
+
+SELECT OrderID, Quantity
+CASE 
+    WHEN Quantity > 30 THEN "Over 30"
+    WHEN Quatity = 30 THEN "Equal 30"
+    ELSE "Under 30"
+END AS QuantityText;
 ```
 
- - ****
+ - **Producto cartesiano JOIN**
+ Crea el equivalente a una intersección de diagrama de ven
  ```sql
+ SELECT * 
+FROM tabla_diaria AS td
+	JOIN tabla_mensual AS tm
+	ON td.pk = tm.fk;
 ```
 
 - ****
