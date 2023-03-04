@@ -263,8 +263,12 @@ Order by nos ayuda con el ordenamiento
  FROM tabla_diaria ORDER BY fecha DESC
 ```
 
-- ****
+- **Order asc**
+Ordenar de manera ascendente
+
  ```sql
+ SELECT *
+ FROM tabla_diaria ORDER BY fecha ASC;
 ```
 
  - ****
