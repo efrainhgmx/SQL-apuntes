@@ -282,8 +282,13 @@ grupos.
  GROUP BY marca, modelo;
 ```
 
-- ****
+- **Limit**
+Limites o Limit
+Nos permite generar limites en queries para mejorar rendimiento.
+
  ```sql
+ SELECT * FROM tabla
+ LIMIT 120
 ```
 
  - ****
