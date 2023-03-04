@@ -291,8 +291,15 @@ Nos permite generar limites en queries para mejorar rendimiento.
  LIMIT 120
 ```
 
- - ****
+ - **OFSSET** 
+Nos permite brincar ciertos regitros, en el siguiente ejemplo:
+Se brinca los primeros 150 registros y trae los primeros 30 despues
+de esos.
+
  ```sql
+ SELECT * FROM tabla
+ OFFSET 150
+ LIMIT 30
 ```
 
 
