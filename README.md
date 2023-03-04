@@ -248,8 +248,11 @@ WHERE name IS NOT NULL;
 ```
 
 
-- ****
+- **ORDER**
+Order by nos ayuda con el ordenamiento
  ```sql
+ SELECT *
+ FROM tabla_diaria ORDER BY fecha;
 ```
 
  - ****
