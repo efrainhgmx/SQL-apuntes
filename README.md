@@ -243,6 +243,8 @@ WHERE name IS NOT NULL;
  - **IN**
  busca las considencias de los paraemtros que ponemos en parentesis
  ```sql
+ SELECT * FROM users 
+ WHERE name IN ('Omar', 'Karla', 'Gustavo');
 ```
 
 
