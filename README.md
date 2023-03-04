@@ -271,8 +271,15 @@ Ordenar de manera ascendente
  FROM tabla_diaria ORDER BY fecha ASC;
 ```
 
- - ****
+ - **GROUP BY**
+Agregación, nos permite crear agrupaciones o reducir los datos en
+grupos.
  ```sql
+ SELECT * FROM tabla
+ GROUP BY marca;
+
+ SELECT * FROM tabla
+ GROUP BY marca, modelo;
 ```
 
 - ****
