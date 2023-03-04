@@ -303,8 +303,14 @@ de esos.
 ```
 
 
-- ****
+- **FECTH**
+Es un estandar SQL para traer ciertos elementos de una tabla.
+Trae el primer elemento de la tabla
+
  ```sql
+ SELECT *
+ FROM tabla_alumnos AS alumnos
+ FETCH FIRST 1 ROWS ONLY;
 ```
 
  - ****
