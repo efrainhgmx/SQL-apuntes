@@ -334,6 +334,18 @@ ese valor.
 
 Trae el valor de colegiatura más alto.
  ```sql
+ SELECT DISTINCT colegiatura
+FROM alumnos
+ORDER BY colegiatura DESC
+LIMIT 1;
+
+SELECT DISTINCT colegiatura
+FROM escuela AS a1
+WHERE 2 = (
+    SELECT COUNT (DISTINCT colegiatura)
+    FROM escuela a2
+    WHERE a1.colegiatura <= a2.colegiatura
+)
 ```
 
  - ****
