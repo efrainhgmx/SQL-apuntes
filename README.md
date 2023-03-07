@@ -348,7 +348,9 @@ WHERE 2 = (
 )
 ```
 
- - ****
+ - **Ejemplo de conjuntos**
+ Traer la lista de alumnos, que tienen al mismo profesor
+ 
  ```sql
 ```
 
