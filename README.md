@@ -313,8 +313,19 @@ Trae el primer elemento de la tabla
  FETCH FIRST 1 ROWS ONLY;
 ```
 
- - ****
+ - **Window Function**
+Las funciones ventana te permite hacer queries de subqueries
+
+Genera una columna con el nombre "row_id" donde le asigna el numero de row
+que tiene el registro. (No siempre puede coincidir con el id)
+ 
  ```sql
+SELECT *
+FROM (
+	SELECT ROW_NUMBER () OVER() AS row_id, *
+	FROM tabla_alumnos
+ )AS alumnos_with_row_nums
+ WHERE row_id = 1
 ```
 
 - ****
