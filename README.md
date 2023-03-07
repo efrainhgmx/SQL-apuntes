@@ -360,7 +360,10 @@ WHERE id IN (
 );
 ```
 
-- ****
+- **Extract**
+Nos permite extraer un valor determinado para un campo en especifico.
+Este es muy util para fechas o datos de tipo date o timestamp.
+
  ```sql
 ```
 
