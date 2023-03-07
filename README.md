@@ -328,7 +328,11 @@ FROM (
  WHERE row_id = 1
 ```
 
-- ****
+- **Distinc**
+Regresa el registro solo una vez sin importar si hay más registros con
+ese valor.
+
+Trae el valor de colegiatura más alto.
  ```sql
 ```
 
