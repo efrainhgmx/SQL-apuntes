@@ -352,6 +352,12 @@ WHERE 2 = (
  Traer la lista de alumnos, que tienen al mismo profesor
  
  ```sql
+ SELECT * FROM alumnos
+WHERE id IN (
+ SELECT id FROM alumnos
+ WHERE tutor_id = 30
+
+);
 ```
 
 - ****
