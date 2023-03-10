@@ -409,6 +409,11 @@ En este caso evalua si hay un valor dentro de ambos rangos, de ser asi devuelve
 true 
 
  ```sql
+ --False
+SELECT numrange(11.1, 19.9) && numrange(20.00, 30,00);
+
+--True
+SELECT numrange(11.1, 22.0) && numrange(20.00, 30,00);
 ```
 
  - ****
