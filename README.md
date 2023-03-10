@@ -433,6 +433,7 @@ lower nos regresa el valor mas alto de un rango númerico.
 Nos devuelve un boolean evaluando si el rango esta vacio.
 
  ```sql
+ SELECT ISEMPTY(numrange(1,5));
 ```
 
 
