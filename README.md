@@ -426,6 +426,7 @@ SELECT numrange(11.1, 22.0) && numrange(20.00, 30,00);
 - **Valor mas bajo de un rango**
 lower nos regresa el valor mas alto de un rango númerico.
  ```sql
+ SELECT LOWER(int8range(15,25));
 ```
 
  - ****
