@@ -401,7 +401,13 @@ y la respuesta es false
  SELECT int4range(10,20) @> 3;
 ```
 
-- ****
+- **Numrange**
+Nos permite crear rangos con numeros y de forma decimal. De igual manera
+regresa un boleano.
+
+En este caso evalua si hay un valor dentro de ambos rangos, de ser asi devuelve 
+true 
+
  ```sql
 ```
 
