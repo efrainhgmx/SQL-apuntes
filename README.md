@@ -383,7 +383,12 @@ FROM alumnos;
 - **Particionar horas, minutos, segundos**
 Al igual que para las fechas, podemos extraer horas, minutos o segundo 
 de un query determinado.
+
  ```sql
+ SELECT DATE_PART('HOUR', fecha_incorporacion) AS hour,
+       DATE_PART('MINUTE', fecha_incorporacion) AS minute,
+       DATE_PART('SECOND', fecha_incorporacion) AS second
+FROM alumnos;
 ```
 
  - ****
