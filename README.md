@@ -369,7 +369,9 @@ SELECT EXTRACT(YEAR FROM fecha_incorporacion) AS anio
 FROM escuela
 ```
 
- - ****
+ - **Particionar fechas** 
+Este es muy util para extraer años, meses o dias
+
  ```sql
 ```
 
