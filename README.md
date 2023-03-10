@@ -373,6 +373,10 @@ FROM escuela
 Este es muy util para extraer años, meses o dias
 
  ```sql
+ SELECT DATE_PART('YEAR', fecha_incorporacion) AS anio,
+       DATE_PART('MONTH', fecha_incorporacion) AS mes,
+       DATE_PART('MONTH', fecha_incorporacion) AS mes
+FROM alumnos;
 ```
 
 
