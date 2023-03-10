@@ -391,8 +391,14 @@ de un query determinado.
 FROM alumnos;
 ```
 
- - ****
+ - **Selectores de rango**
+ Es una función que genera un rango de numeros enteros y retorna un boolean.
+
+En este ejemplo evalua si el numero 3 esta dentro del rango de 10 a 20
+y la respuesta es false
+
  ```sql
+ SELECT int4range(10,20) @> 3;
 ```
 
 - ****
