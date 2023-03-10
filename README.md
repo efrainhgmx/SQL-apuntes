@@ -380,7 +380,9 @@ FROM alumnos;
 ```
 
 
-- ****
+- **Particionar horas, minutos, segundos**
+Al igual que para las fechas, podemos extraer horas, minutos o segundo 
+de un query determinado.
  ```sql
 ```
 
