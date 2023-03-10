@@ -416,7 +416,9 @@ SELECT numrange(11.1, 19.9) && numrange(20.00, 30,00);
 SELECT numrange(11.1, 22.0) && numrange(20.00, 30,00);
 ```
 
- - ****
+ - **Valor mas alto de un rango**
+ Upper nos regresa el valor mas alto de un rango númerico.
+ 
  ```sql
 ```
 
