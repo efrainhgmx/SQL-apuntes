@@ -429,7 +429,9 @@ lower nos regresa el valor mas alto de un rango númerico.
  SELECT LOWER(int8range(15,25));
 ```
 
- - ****
+ - **Rango vacio**
+Nos devuelve un boolean evaluando si el rango esta vacio.
+
  ```sql
 ```
 
