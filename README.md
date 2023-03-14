@@ -437,7 +437,13 @@ Nos devuelve un boolean evaluando si el rango esta vacio.
 ```
 
 
- - ****
+ - **LPad**
+ (Rellena por la izquiersa)Nos permite generar una cadena con relleno donde recibe tres parametros
+1.- una cadena de caracteres
+2.- Numero de relleno
+3.- El caracter por el que se rellena
+
+Esto mantiene el lenght de ese numero
  ```sql
 ```
 
