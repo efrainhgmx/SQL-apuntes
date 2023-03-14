@@ -453,7 +453,9 @@ FROM alumnos
 WHERE id < 10;
 ```
 
-- ****
+- **RPad**
+Es igual que left solo que en este caso es con relleno a la derecha.
+
  ```sql
 ```
 
