@@ -460,7 +460,10 @@ Es igual que left solo que en este caso es con relleno a la derecha.
  SELECT rpad('Manuel', 15,'+');
 ```
 
- - ****
+ - **Generar Series**
+ Nos permite generar rangos o series en duplas. Recibe los rangos y como 
+tercer paramtro los pasos que va a hacer.
+
  ```sql
 ```
 
