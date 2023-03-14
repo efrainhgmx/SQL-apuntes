@@ -443,8 +443,14 @@ Nos devuelve un boolean evaluando si el rango esta vacio.
 2.- Numero de relleno
 3.- El caracter por el que se rellena
 
-Esto mantiene el lenght de ese numero
+Esto mantiene el lenght de ese numero.
+
  ```sql
+SELECT lpad('Manuel', 15,'+');
+
+SELECT lpad(nombre, id, '*')
+FROM alumnos
+WHERE id < 10;
 ```
 
 - ****
