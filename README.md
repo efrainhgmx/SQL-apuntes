@@ -465,6 +465,11 @@ Es igual que left solo que en este caso es con relleno a la derecha.
 tercer paramtro los pasos que va a hacer.
 
  ```sql
+ //Genera un rango del 1 al 5 de uno en uno
+SELECT * FROM generate_series(1,5); 
+
+//Genera un rango del 2 al 20 de dos en dos
+SELECT *  FROM generate_series(2, 20, 2);
 ```
 
 - ****
