@@ -472,7 +472,7 @@ SELECT * FROM generate_series(1,5);
 SELECT *  FROM generate_series(2, 20, 2);
 ```
 
-- ****
+- **Series con fechas**
  ```sql
 ```
 
