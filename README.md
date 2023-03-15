@@ -473,6 +473,8 @@ SELECT *  FROM generate_series(2, 20, 2);
 ```
 
 - **Series con fechas**
+Tambien es posible usar el query anterior en fechas u horas.
+
  ```sql
 ```
 
