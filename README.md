@@ -481,7 +481,9 @@ FROM generate_series('2020-09-01 00:00:00'::timestamp,
 '2020-09-04 12:00:00', '10 hours');
 ```
 
- - ****
+ - **SELECT para secuencias**
+Es posible modificar la secuencia de una tabla, esto altera la manera en como se genera la numeración de los id
+ejemplo podemos pasar del id = 10 al 150. Si es que se desea o incluso poder corregir las secuencias.
  ```sql
 ```
 
